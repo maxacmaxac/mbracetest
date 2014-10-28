@@ -7,15 +7,11 @@ import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-import android.content.Context;
-import android.net.ConnectivityManager;
-import android.net.NetworkInfo;
-import android.os.Build;
 import android.util.Log;
 
-public class ConnectToFlickr {
+public class FlickrConnect {
 
-    private static String TAG = ConnectToFlickr.class.getSimpleName();
+    private static String TAG = FlickrConnect.class.getSimpleName();
 	private static int CONNECT_TIMEOUT_MS = 5000;
 	private static int READ_TIMEOUT_MS = 15000;
 

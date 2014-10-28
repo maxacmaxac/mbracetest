@@ -1,4 +1,4 @@
-package mbrace.android.com.mbracelabs.Utils;
+package mbrace.android.com.mbracelabs.utils;
 
 import android.content.Context;
 import android.net.ConnectivityManager;

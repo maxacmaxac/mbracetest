@@ -19,6 +19,7 @@ import android.os.Message;
 import android.util.Log;
 
 import mbrace.android.com.mbracelabs.Mbrace;
+import mbrace.android.com.mbracelabs.utils.Utils;
 import mbrace.android.com.mbracelabs.model.FlickrImage;
 
 public class FlickrFactory {
@@ -63,7 +64,7 @@ public class FlickrFactory {
 
 	public static void getImageURLS(FlickrImage imgCon) {
 		String url = createURL(FLICKR_GET_SIZES_ID, imgCon.getServerId());
-		ByteArrayOutputStream baos = ConnectToFlickr.readBytes(url);
+		ByteArrayOutputStream baos = FlickrConnect.readBytes(url);
 		String json = baos.toString();
 		try {
 			JSONObject root = new JSONObject(json.replace("jsonFlickrApi(", "").replace(")", ""));
@@ -150,8 +151,8 @@ public class FlickrFactory {
 		ArrayList<FlickrImage> tmp = new ArrayList<FlickrImage>();
 		String jsonString = null;
         try {
-            if (ConnectToFlickr.isOnline(ctx)) {
-                ByteArrayOutputStream baos = ConnectToFlickr.readBytes(url);
+            if (Utils.isOnline(ctx)) {
+                ByteArrayOutputStream baos = FlickrConnect.readBytes(url);
                 if (baos == null) {
                     return null;
                 }

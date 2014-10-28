@@ -17,9 +17,9 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-import mbrace.android.com.mbracelabs.Utils.FileUtils;
-import mbrace.android.com.mbracelabs.Utils.Utils;
-import mbrace.android.com.mbracelabs.Utils.dbUtils.DataSource;
+import mbrace.android.com.mbracelabs.utils.FileUtils;
+import mbrace.android.com.mbracelabs.utils.Utils;
+import mbrace.android.com.mbracelabs.utils.dbUtils.DataSource;
 import mbrace.android.com.mbracelabs.manager.FlickrFactory;
 import mbrace.android.com.mbracelabs.model.FlickrImage;
 

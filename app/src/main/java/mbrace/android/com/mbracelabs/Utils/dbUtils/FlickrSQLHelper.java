@@ -1,4 +1,4 @@
-package mbrace.android.com.mbracelabs.Utils.dbUtils;
+package mbrace.android.com.mbracelabs.utils.dbUtils;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
@@ -13,8 +13,8 @@ public class FlickrSQLHelper extends SQLiteOpenHelper {
     public static final String POSITION = "position";
     public static final String THUMB = "thumb";
     public static final String PHOTO = "PHOTO";
-    public static final String LARGEURL = "largeURL";
-    public static final String THUMBURL = "thumbURL";
+    public static final String LARGE_URL = "largeURL";
+    public static final String THUMB_URL = "thumbURL";
     public static final String OWNER = "owner";
     public static final String SECRET = "secret";
     public static final String SERVER = "server";
@@ -32,12 +32,12 @@ public class FlickrSQLHelper extends SQLiteOpenHelper {
             + POSITION + " integer, "
             + THUMB + " text, "
             + PHOTO + " text, "
-            + LARGEURL + " text, "
-            + THUMBURL + " text, "
+            + LARGE_URL + " text, "
+            + THUMB_URL + " text, "
             + OWNER + " text, "
             + SECRET + " text, "
             + SERVER + " text, "
-            + TAG + " text, "
+            + TAG + " text, " //TODO SET INDEX on this column
             + FARM + " text); "
             ;
 

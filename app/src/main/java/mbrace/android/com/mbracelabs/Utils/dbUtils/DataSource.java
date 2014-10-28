@@ -1,4 +1,4 @@
-package mbrace.android.com.mbracelabs.Utils.dbUtils;
+package mbrace.android.com.mbracelabs.utils.dbUtils;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -9,7 +9,7 @@ import android.database.sqlite.SQLiteDatabase;
 import java.util.ArrayList;
 import java.util.List;
 
-import mbrace.android.com.mbracelabs.Utils.FileUtils;
+import mbrace.android.com.mbracelabs.utils.FileUtils;
 import mbrace.android.com.mbracelabs.model.FlickrImage;
 
 public class DataSource {
@@ -18,7 +18,7 @@ public class DataSource {
     private FlickrSQLHelper dbHelper;
     private String[] allColumns = {FlickrSQLHelper.ID, FlickrSQLHelper.SERVER_ID,
             FlickrSQLHelper.POSITION, FlickrSQLHelper.THUMB, FlickrSQLHelper.PHOTO,
-            FlickrSQLHelper.LARGEURL, FlickrSQLHelper.THUMBURL, FlickrSQLHelper.OWNER,
+            FlickrSQLHelper.LARGE_URL, FlickrSQLHelper.THUMB_URL, FlickrSQLHelper.OWNER,
             FlickrSQLHelper.SECRET, FlickrSQLHelper.SERVER, FlickrSQLHelper.FARM,
             FlickrSQLHelper.TAG};
 
@@ -40,8 +40,8 @@ public class DataSource {
         values.put(FlickrSQLHelper.POSITION, flickrImage.getPosition());
         values.put(FlickrSQLHelper.THUMB, flickrImage.getSavedThumbURL());
         values.put(FlickrSQLHelper.PHOTO, flickrImage.getSavedPhotoURL());
-        values.put(FlickrSQLHelper.LARGEURL, flickrImage.getLargeURL());
-        values.put(FlickrSQLHelper.THUMBURL, flickrImage.getThumbURL());
+        values.put(FlickrSQLHelper.LARGE_URL, flickrImage.getLargeURL());
+        values.put(FlickrSQLHelper.THUMB_URL, flickrImage.getThumbURL());
         values.put(FlickrSQLHelper.OWNER, flickrImage.getOwner());
         values.put(FlickrSQLHelper.SECRET, flickrImage.getSecret());
         values.put(FlickrSQLHelper.SERVER, flickrImage.getServer());

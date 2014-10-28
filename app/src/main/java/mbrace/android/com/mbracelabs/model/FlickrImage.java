@@ -83,7 +83,8 @@ public class FlickrImage {
 
 	@Override
 	public String toString() {
-		return "FlickrImage [serverId=" + serverId + ", thumbURL=" + thumbURL + ", largeURL=" + largeURL
+		return "FlickrImage [serverId=" + serverId + ", thumbURL=" + thumbURL + ", largeURL="
+                + largeURL
                 + ", owner=" + owner + ", secret=" + secret + ", server=" + server + ", farm="
 				+ farm + "]";
 	}
